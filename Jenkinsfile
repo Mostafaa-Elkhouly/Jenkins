@@ -1,5 +1,4 @@
 @Library('jenkins-shared-library')_
-agent {
-    label 'slave1'
+stage('run nginx pipeline from shared library') {
+    nginx 'slave1'
 }
-nginx()
