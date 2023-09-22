@@ -7,12 +7,7 @@ pipeline {
         stage('nginx from Jenkinsfile') {
             steps {
                 // Use the nginx() step from the shared library
-                
-                nginx() {
-                    script {
-                        sh 'echo "welcome from Jenkinsfile in GitHub" > /var/www/html/index.html'
-                    }                
-                }
+                nginx()
             }
         }
     }
