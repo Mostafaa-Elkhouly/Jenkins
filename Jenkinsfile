@@ -8,7 +8,7 @@ pipeline {
             steps {
                 // Use the nginx() step from the shared library
                 nginx() {
-                    sh 'sudo echo "welcome from Jenkinsfile in GitHub" >> /var/www/html/index.html'
+                    sh 'echo "welcome from Jenkinsfile in GitHub" >> /var/www/html/index.html'
                 }
             }
         }
